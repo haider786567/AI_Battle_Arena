@@ -7,10 +7,10 @@ type Config = {
     readonly GORK_API_KEY: string;
     
 }
-const config: Config = {
+const app_config: Config = {
     GEMINI_API_KEY: process.env.GEMINI_API_KEY || "",
     MISTRAL_API_KEY: process.env.MISTRAL_API_KEY || "",
-    GORK_API_KEY: process.env.GORK_API_KEY || "",
+    GORK_API_KEY: process.env.GROQ_API_KEY || "",
 }
 
-export default config;
+export default app_config;
